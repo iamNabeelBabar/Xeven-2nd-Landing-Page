@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F8F9;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+
+/* ------------For Main Section ---------- */
+
+main {
+    background-image: url(/assets/Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: visible;
+    background-position: bottom;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0 auto;
+    color: rgb(216, 216, 216);
+}
+
+/* =====Nabvbar===== */
+
+.navbar ul {
+    display: flex;
+    padding: 20px;
+}
+
+.navbar ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+}
+
+button, .logo{cursor: pointer;}
+
+/* ================ Main Button =================== */
+
+.main-button {
+    display: flex;
+    margin-right: 8vw;
+}
+
+.main-button button {
+    margin: 12px;
+}
+
+.login-btn,
+.started-btn {
+    background: none;
+    color: rgb(236, 234, 234);
+    border: none;
+}
+
+.started-btn {
+    background-color: rgb(235, 20, 255);
+    padding: 7px 22px;
+    border-radius: 5px;
+    min-width: 114px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.grid-icon span {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+/* =========== Media Queries for Main Container ========== */
+
+@media(min-width:768px) {
+    .grid-icon {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .login-btn {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        margin: 0px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main-button {
+        margin: 0px;
+    }
+
+}
+
+/* ============== MAIN CONTENT ============= */
+
+.main-content {
+    color: rgb(255, 255, 255);
+    max-width: 40%;
+    min-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+
+.main-content p {
+    color: rgb(215, 210, 210);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+/* =========== Media Queries for Main Content =========== */
+
+@media(max-width:768px) {
+    .main-content {
+        min-width: 80%;
+    }
+}
+
+
+
+/* =============== Container Image ================= */
+
+.container-image{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index:999 ;
+    border-radius: 12px;
+    margin-bottom:-160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.container-image img{
+    width: 700px;
+    height: 350px;
+    border-radius: 12px;
+    max-width: 90%;
+}
+
+/* ======= Media Queries for Container Image ======== */
+
+@media(max-width:768px){
+    .container-image{
+        width: 85%;
+    }
+    .container-image img{
+        height: 200px;
+    }
+}
+
+
+/* =================== Container 2 ====================== */
+
+.container2{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 240px;
+    padding: 100px 0px 50px 80px ;
+    display: flex;
+    font-family: 'Segoe UI';
+    border-radius: 12px;
+    /* gap: 30%; */
+    justify-content: space-between;
+    background-color: rgb(230, 229, 229);
+}
+
+.cont2-images img{
+    height: 200px;
+}
+.cont2-txt{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.second-img{
+    margin-top: 120px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+}
+
+/* ============= Media Queries for Container 2 ============= */
+
+@media (min-width:768px){
+    .first-img{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .container2{
+        flex-direction: column;
+        width: 100%;
+        /* overflow: hidden; */
+        padding:10px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    .cont2-txt{
+        flex-direction: column;
+        width: 90%;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+    .cont2-images{
+        display: flex;
+        flex-direction: row;
+        /* width: 100%; */
+        justify-content: space-around;
+    }
+    .second-img{
+        margin-bottom: 28px;
+    }
+
+}
+
+
+@media (max-width: 430px){
+    .cont2-images{
+        flex-direction: column;
+        text-align: center;
+    }
+    .second-img{
+        margin-top: -10px;
+    }
+}
