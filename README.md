@@ -1,3 +1,7 @@
+# Screenshot:
+
+![Screenshot](screenshot%20(2).png)
+
 # Aniquest - 2nd Landing Page
 
 Welcome to the **Aniquest 2nd Landing Page**!  
